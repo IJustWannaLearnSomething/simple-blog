@@ -4,8 +4,8 @@
 <p> <%= homeStartContent %> </p>
 
 <% newPosts.forEach((singlePost) => { %>
-  <h1> <%= singlePost.pTitle %> </h1>
-  <p> <%= singlePost.pBodyTruncated %> <a href="/posts/<%= singlePost.pTitle %>">Read More</a> </p>
+  <h1> <%= singlePost.postName %> </h1>
+  <p> <%= singlePost.truncPost %> <a href="/posts/<%= singlePost._id %>">Read More</a> </p>
 <% }) %>
 
 <%- include("partials/footer") -%>
